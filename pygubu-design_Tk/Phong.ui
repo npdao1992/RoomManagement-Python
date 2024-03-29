@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Frame" id="frame_ThongKe" named="True">
+    <property name="height">600</property>
+    <property name="width">1000</property>
+    <layout manager="place">
+      <property name="anchor">nw</property>
+      <property name="x">0</property>
+      <property name="y">0</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="label_ThongTin" named="True">
+        <property name="font">{Times New Roman} 24 {bold italic}</property>
+        <property name="foreground">#0000ff</property>
+        <property name="state">normal</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Quản Lý Phòng Trọ</property>
+        <layout manager="place">
+          <property name="anchor">center</property>
+          <property name="x">500</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="frame_button" named="True">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">100</property>
+          <property name="width">550</property>
+          <property name="x">90</property>
+          <property name="y">100</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="button_phong" named="True">
+            <property name="background">#ff80ff</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#800000</property>
+            <property name="text" translatable="yes">PHÒNG</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">120</property>
+              <property name="y">20</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_dichvu" named="True">
+            <property name="background">#ff8000</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#800000</property>
+            <property name="text" translatable="yes">DỊCH VỤ</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">120</property>
+              <property name="x">200</property>
+              <property name="y">20</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_khachthue" named="True">
+            <property name="background">#00ffff</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#800000</property>
+            <property name="text" translatable="yes">KHÁCH THUÊ</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">120</property>
+              <property name="x">400</property>
+              <property name="y">20</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="frame_chitiet" named="True">
+        <property name="height">985</property>
+        <property name="width">370</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">370</property>
+          <property name="width">985</property>
+          <property name="x">10</property>
+          <property name="y">220</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="lablel_ds" named="True">
+            <property name="font">{Times New Roman} 20 {bold}</property>
+            <property name="foreground">#3ac53a</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Danh sách</property>
+            <layout manager="place">
+              <property name="x">20</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Treeview" id="treeview1">
+            <property name="selectmode">extended</property>
+            <property name="show">headings</property>
+            <layout manager="place">
+              <property name="height">300</property>
+              <property name="width">680</property>
+              <property name="x">20</property>
+              <property name="y">50</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_map" named="True">
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ff0000</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Mã Phòng :</property>
+            <layout manager="place">
+              <property name="x">720</property>
+              <property name="y">50</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tenp" named="True">
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ff0000</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Tên Phòng :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">720</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tinhtrang" named="True">
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ff0000</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Tình Trạng :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">720</property>
+              <property name="y">110</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_diachi" named="True">
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ff0000</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Địa chỉ :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">720</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_gia" named="True">
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ff0000</property>
+            <property name="relief">flat</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Giá :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">720</property>
+              <property name="y">170</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_map" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">850</property>
+              <property name="y">50</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_tenp" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">850</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_tinhtrang" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">850</property>
+              <property name="y">110</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_diachi" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">850</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_gia" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">850</property>
+              <property name="y">170</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_them" named="True">
+            <property name="background">#0000ff</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Thêm</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">70</property>
+              <property name="x">730</property>
+              <property name="y">320</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_xoa" named="True">
+            <property name="background">#0000ff</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Xoá</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">70</property>
+              <property name="x">820</property>
+              <property name="y">320</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_sua" named="True">
+            <property name="background">#0000ff</property>
+            <property name="font">{Times New Roman} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Sửa</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">70</property>
+              <property name="x">910</property>
+              <property name="y">320</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

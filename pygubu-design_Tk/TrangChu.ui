@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Frame" id="frame_ThongTin" named="True">
+    <property name="height">600</property>
+    <property name="width">1000</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="label_ThongTin" named="True">
+        <property name="font">{Times New Roman} 24 {bold italic}</property>
+        <property name="foreground">#0000ff</property>
+        <property name="state">normal</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Quản Lý Phòng Trọ</property>
+        <layout manager="place">
+          <property name="anchor">center</property>
+          <property name="x">500</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="labelframe_ThongTin" named="True">
+        <property name="background">#ffffff</property>
+        <property name="borderwidth">15</property>
+        <property name="height">450</property>
+        <property name="width">900</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">50</property>
+          <property name="y">120</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label_tieude" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 16 {bold}</property>
+            <property name="foreground">#0000ff</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Thông Tin Chủ Nhà Trọ</property>
+            <layout manager="place">
+              <property name="anchor">center</property>
+              <property name="x">450</property>
+              <property name="y">40</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tentro" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Tên trọ :</property>
+            <layout manager="place">
+              <property name="x">50</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_mota" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Mô tả :</property>
+            <layout manager="place">
+              <property name="x">50</property>
+              <property name="y">160</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_ngaylap" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Ngày lập :</property>
+            <layout manager="place">
+              <property name="x">50</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tenchu" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="justify">left</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Tên chủ :</property>
+            <layout manager="place">
+              <property name="x">550</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_diachi" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Địa chỉ :</property>
+            <layout manager="place">
+              <property name="x">550</property>
+              <property name="y">160</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_sdt" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">SĐT :</property>
+            <layout manager="place">
+              <property name="x">550</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_hinh" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="image">icon-pt.jpg</property>
+            <property name="justify">left</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <layout manager="place">
+              <property name="height">220</property>
+              <property name="width">870</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tent" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Nhà Trọ Hắc Ám</property>
+            <layout manager="place">
+              <property name="x">150</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_ngay" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">13/06/2023</property>
+            <layout manager="place">
+              <property name="x">150</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_mo" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Đừng thức quá 12h00 đêm</property>
+            <layout manager="place">
+              <property name="x">150</property>
+              <property name="y">160</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_tenc" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="justify">left</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Hắc Bạch Vô Thường</property>
+            <layout manager="place">
+              <property name="x">650</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_s" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="justify">left</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">0102030405</property>
+            <layout manager="place">
+              <property name="x">650</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label_d" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Times New Roman} 14 {bold italic}</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Số 0, Sông Hoàng Tuyền</property>
+            <layout manager="place">
+              <property name="x">650</property>
+              <property name="y">160</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

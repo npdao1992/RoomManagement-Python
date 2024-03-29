@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Frame" id="frame_PhongTro" named="True">
+    <property name="height">600</property>
+    <property name="width">1000</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.Button" id="button_Them" named="True">
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Thêm</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="bordermode">ignore</property>
+          <property name="x">500</property>
+          <property name="y">90</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_CapNhat" named="True">
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="text" translatable="yes">Cập nhật</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="bordermode">ignore</property>
+          <property name="x">650</property>
+          <property name="y">90</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_Xoa" named="True">
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Xoá</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="bordermode">ignore</property>
+          <property name="x">800</property>
+          <property name="y">90</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="label_PhongTro" named="True">
+        <property name="font">{Times New Roman} 20 {bold italic}</property>
+        <property name="text" translatable="yes">Phòng Trọ</property>
+        <layout manager="place">
+          <property name="anchor">center</property>
+          <property name="x">500</property>
+          <property name="y">20</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="lablel_MaPhong" named="True">
+        <property name="font">{Times New Roman} 12 {}</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Mã phòng :</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">50</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="lablel_TenPhong" named="True">
+        <property name="font">{Times New Roman} 12 {}</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Tên phòng :</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">50</property>
+          <property name="y">80</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="lablel_TinhTrang" named="True">
+        <property name="font">{Times New Roman} 12 {}</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Tình trạng :</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">50</property>
+          <property name="y">110</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="lablel_Gia" named="True">
+        <property name="font">{Times New Roman} 12 {}</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Giá :</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">50</property>
+          <property name="y">140</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_MaPhong" named="True">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">150</property>
+          <property name="y">53</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_TenPhong" named="True">
+        <property name="show">•</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">150</property>
+          <property name="y">83</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_TinhTrang" named="True">
+        <property name="show">•</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">150</property>
+          <property name="y">113</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_Gia" named="True">
+        <property name="show">•</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">150</property>
+          <property name="y">143</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Treeview" id="treeview_DSPT" named="True">
+        <property name="selectmode">extended</property>
+        <property name="show">headings</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">370</property>
+          <property name="width">900</property>
+          <property name="x">50</property>
+          <property name="y">200</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_Load" named="True">
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="state">normal</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Load</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="bordermode">ignore</property>
+          <property name="x">350</property>
+          <property name="y">90</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
